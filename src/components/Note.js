@@ -1,8 +1,8 @@
-const Note = ()=>{
+const Note = ({id,text,date})=>{
     return <div className="note">
-        <span>Yes!!</span>
+        <span>{text}</span>
         <div className="note-footer">
-            <small>13/01/2022</small>
+            <small>{date}</small>
             {/* <MdDeleteForever className='delete-icon' size="1.3em"/>  */}
         </div>   
     </div>

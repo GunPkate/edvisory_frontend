@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
+.container{
+  max-width: 960;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .notes-list {
   display: grid;
   grid-gap: 1rem;
