@@ -16,9 +16,13 @@ const App = () =>{
   },
 ]);
 
+const addNote = (text) => {
+  alert(text);
+}
+
   return (
     <div className="container" >
-      <NoteList notes = {notes}/>
+      <NoteList notes = {notes} handleAddNote = {addNote}/>
     </div>
   )
 }
