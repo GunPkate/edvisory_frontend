@@ -1,4 +1,5 @@
 import Note from "./Note"
+import AddNote from "./AddNote"
 
 const NoteList =({notes}) =>{
     return(
@@ -6,7 +7,7 @@ const NoteList =({notes}) =>{
             {notes.map((note)=> 
                 <Note id={note.id} text={note.text} date={note.date}/>
             )}
-
+            <AddNote/>
         </div>
     )
 }

@@ -27,6 +27,37 @@ code {
   /* grid fix position and height fill auto width */
 }
 
+.note.new{
+  background-color: aquamarine;
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: aquamarine;
+}
+
+textarea:focus{
+  outline:  none;
+}
+
+.save{
+  background-color: aliceblue;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.save:hover{
+  background-color: #fbf8c9;
+  cursor: pointer;
+
+}
+
 .note {
   background-color: #fef68a;
 
