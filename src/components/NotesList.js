@@ -7,6 +7,7 @@ const NoteList =({notes, handleAddNote, handleDeleteNote}) =>{
             {notes.map((note)=> 
                 <Note
                     id={note.id}
+                    title={note.title}
                     text={note.text}
                     date={note.date}
                     handleDeleteNote = {handleDeleteNote}

@@ -41,26 +41,55 @@ textarea:focus{
   outline:  none;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 .save{
-  background-color: aliceblue;
+  background-color: royalblue;
+  color: #fbf8c9;
+  font-weight: bold;
   border: none;
   border-radius: 15px;
   padding: 1rem;
-  min-height: 170px;
+  min-height: 50px;
+  max-width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: medium;
 }
 
 .save:hover{
   background-color: #fbf8c9;
   cursor: pointer;
+  color: black;
+}
 
+.delete-icon {
+  background-color: salmon;
+  color: #fbf8c9;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  min-height: 50px;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: medium;
+}
+
+.delete-icon:hover{
+  background-color: #f7e70f;
+  color: red;
+  cursor: pointer;
 }
 
 .note {
   background-color: #fef68a;
-
   border-radius: 10px;
   padding: 1rem;
   min-height: 170px;

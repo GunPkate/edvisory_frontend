@@ -22,9 +22,9 @@ useEffect(() => {
 
 
       const {data: response} = await axios.get('http://localhost:5000/note_orm/getall');
-      console.log(response.resultDescription)
-      console.log(JSON.parse(JSON.stringify(response.resultDescription)))
-      setNotes(response.resultDescription);
+      console.log(response.resultData)
+      console.log(JSON.parse(JSON.stringify(response.resultData)))
+      setNotes(response.resultData);
 
   }
   fetchData()
@@ -34,17 +34,21 @@ const addNote = (text) => {
   const date = new Date();
   const newNote ={
     id: nanoid(),
+    title: title,
     text: text,
     date: date.toLocaleDateString()
   }
 
   const newNotes = [...notes,newNote]
   setNotes(newNotes)
+  axios.post('http://localhost:5000/note_orm/create',newNote)
 }
 
 const deleteNote =(id) =>{
   const newNotes = notes.filter((note)=> note.id !== id)
+  alert(id)
   setNotes(newNotes)
+  axios.post('/note_orm/delete')
 }
 
   return (
